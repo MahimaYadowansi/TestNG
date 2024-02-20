@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Regression CreatingDependies">
+    <classes>
+      <class name="regressionTest.CreatingDependies"/>
+      
+      
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Regression BasicLogIn">
+    <classes>
+     
+      
+      <class name="regressionTest.BasicLogIn"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

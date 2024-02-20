@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="CreatingDependies">
+		<classes>
+			<class name="testcases.CreatingDependies" />
+
+		</classes>
+	</test> <!--
+	Test -->
+
+	<test name="Validation Test">
+		<classes>
+
+			<class name="testcases.ValidationTest" />
+
+		</classes>
+	</test> <!--
+	Test -->
+
+	<test name="BasicLogIn">
+		<classes>
+
+			<class name="testcases.BasicLogIn" />
+		</classes>
+	</test> <!--
+	Test -->
+
+</suite> <!--
+Suite -->

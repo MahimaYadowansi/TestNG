@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite (0)]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Regression CreatingDependies(failed)">
+    <classes>
+      <class name="regressionTest.CreatingDependies">
+        <methods>
+          <include name="fourTest"/>
+          <include name="doUserReg"/>
+          <include name="doLogIn"/>
+        </methods>
+      </class> <!-- regressionTest.CreatingDependies -->
+    </classes>
+  </test> <!-- Regression CreatingDependies(failed) -->
+</suite> <!-- Failed suite [Suite (0)] -->
