@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+	<!-- for include or exclude test cases
+	<groups>
+		<run>
+			<include name="bvt"></include>
+			<include name="functional"></include>
+		</run>
+	</groups> -->
+	
+	<listeners>
+		<listener class-name="customListerners.Listerners"></listener>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+	</listeners>
+	<test name=" TestFailure">
+		<classes>
+
+			<class name="testcases.TestFailure" />
+
+		</classes>
+		</test>
+	
+	<test name=" BaseTest">
+		<classes>
+
+			<class name="testcases.BaseTest" />
+
+		</classes>
+		</test>
+	
+	<test name=" Test1">
+		<classes>
+
+			<class name="testcases.Test1" />
+
+		</classes>
+		</test>
 	<test name="CreatingDependies">
 		<classes>
 			<class name="testcases.CreatingDependies" />

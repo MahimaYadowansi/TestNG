@@ -1,279 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="13" passed="9" failed="2" skipped="2">
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-19T19:40:23 IST" name="Suite" finished-at="2024-02-19T19:40:23 IST" duration-ms="402">
+  <suite started-at="2024-02-24T13:04:04 IST" name="Suite" finished-at="2024-02-24T13:04:04 IST" duration-ms="251">
     <groups>
     </groups>
-    <test started-at="2024-02-19T19:40:23 IST" name="CreatingDependies" finished-at="2024-02-19T19:40:23 IST" duration-ms="146">
-      <class name="testcases.CreatingDependies">
-        <test-method signature="doUserReg()[pri:1, instance:testcases.CreatingDependies@402bba4f]" started-at="2024-02-19T19:40:23 IST" name="doUserReg" finished-at="2024-02-19T19:40:23 IST" duration-ms="20" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[User not registered]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: User not registered
-at org.testng.Assert.fail(Assert.java:111)
-at testcases.CreatingDependies.doUserReg(CreatingDependies.java:11)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1296)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+    <test started-at="2024-02-24T13:04:04 IST" name="Test" finished-at="2024-02-24T13:04:04 IST" duration-ms="251">
+      <class name="parallelTest.TestClass3">
+        <test-method signature="testMethod10()[pri:0, instance:parallelTest.TestClass3@14cd1699]" started-at="2024-02-24T13:04:04 IST" name="testMethod10" finished-at="2024-02-24T13:04:04 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doUserReg -->
-        <test-method signature="thirdTest()[pri:3, instance:testcases.CreatingDependies@402bba4f]" started-at="2024-02-19T19:40:23 IST" name="thirdTest" finished-at="2024-02-19T19:40:23 IST" depends-on-methods="testcases.CreatingDependies.doUserReg" duration-ms="9" status="PASS">
+        </test-method> <!-- testMethod10 -->
+        <test-method signature="testMethod11()[pri:0, instance:parallelTest.TestClass3@14cd1699]" started-at="2024-02-24T13:04:04 IST" name="testMethod11" finished-at="2024-02-24T13:04:04 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- thirdTest -->
-        <test-method signature="fourTest()[pri:4, instance:testcases.CreatingDependies@402bba4f]" started-at="2024-02-19T19:40:23 IST" name="fourTest" finished-at="2024-02-19T19:40:23 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- testMethod11 -->
+        <test-method signature="testMethod12()[pri:0, instance:parallelTest.TestClass3@14cd1699]" started-at="2024-02-24T13:04:04 IST" name="testMethod12" finished-at="2024-02-24T13:04:04 IST" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fourTest -->
-        <test-method signature="doLogIn()[pri:2, instance:testcases.CreatingDependies@402bba4f]" started-at="2024-02-19T19:40:23 IST" name="doLogIn" finished-at="2024-02-19T19:40:23 IST" depends-on-methods="testcases.CreatingDependies.fourTest, testcases.CreatingDependies.doUserReg" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method testcases.CreatingDependies.doLogIn() on instance testcases.CreatingDependies@402bba4f depends on not successfully finished methods 
-[testcases.CreatingDependies.fourTest() on instance testcases.CreatingDependies@402bba4f
-testcases.CreatingDependies.doUserReg() on instance testcases.CreatingDependies@402bba4f]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method testcases.CreatingDependies.doLogIn() on instance testcases.CreatingDependies@402bba4f depends on not successfully finished methods 
-[testcases.CreatingDependies.fourTest() on instance testcases.CreatingDependies@402bba4f
-testcases.CreatingDependies.doUserReg() on instance testcases.CreatingDependies@402bba4f]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1296)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        </test-method> <!-- testMethod12 -->
+        <test-method signature="testMethod9()[pri:0, instance:parallelTest.TestClass3@14cd1699]" started-at="2024-02-24T13:04:04 IST" name="testMethod9" finished-at="2024-02-24T13:04:04 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doLogIn -->
-      </class> <!-- testcases.CreatingDependies -->
-    </test> <!-- CreatingDependies -->
-    <test started-at="2024-02-19T19:40:23 IST" name="Validation Test" finished-at="2024-02-19T19:40:23 IST" duration-ms="31">
-      <class name="testcases.ValidationTest">
-        <test-method signature="validateTitle()[pri:0, instance:testcases.ValidationTest@74f0ea28]" started-at="2024-02-19T19:40:23 IST" name="validateTitle" finished-at="2024-02-19T19:40:23 IST" duration-ms="21" status="PASS">
+        </test-method> <!-- testMethod9 -->
+      </class> <!-- parallelTest.TestClass3 -->
+      <class name="parallelTest.TestClass1">
+        <test-method signature="testMethod1()[pri:0, instance:parallelTest.TestClass1@48f2bd5b]" started-at="2024-02-24T13:04:04 IST" name="testMethod1" finished-at="2024-02-24T13:04:04 IST" duration-ms="25" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateTitle -->
-      </class> <!-- testcases.ValidationTest -->
-    </test> <!-- Validation Test -->
-    <test started-at="2024-02-19T19:40:23 IST" name="BasicLogIn" finished-at="2024-02-19T19:40:23 IST" duration-ms="62">
-      <class name="testcases.BasicLogIn">
-        <test-method is-config="true" signature="creatingDBCon()[pri:0, instance:testcases.BasicLogIn@1aafa419]" started-at="2024-02-19T19:40:23 IST" name="creatingDBCon" finished-at="2024-02-19T19:40:23 IST" duration-ms="10" status="PASS">
+        </test-method> <!-- testMethod1 -->
+        <test-method signature="testMethod2()[pri:0, instance:parallelTest.TestClass1@48f2bd5b]" started-at="2024-02-24T13:04:04 IST" name="testMethod2" finished-at="2024-02-24T13:04:04 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- creatingDBCon -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcases.BasicLogIn@1aafa419]" started-at="2024-02-19T19:40:23 IST" name="launchBrowser" finished-at="2024-02-19T19:40:23 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- testMethod2 -->
+        <test-method signature="testMethod3()[pri:0, instance:parallelTest.TestClass1@48f2bd5b]" started-at="2024-02-24T13:04:04 IST" name="testMethod3" finished-at="2024-02-24T13:04:04 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="doUserReg()[pri:1, instance:testcases.BasicLogIn@1aafa419]" started-at="2024-02-19T19:40:23 IST" name="doUserReg" finished-at="2024-02-19T19:40:23 IST" duration-ms="5" status="PASS">
+        </test-method> <!-- testMethod3 -->
+        <test-method signature="testMethod5()[pri:0, instance:parallelTest.TestClass1@48f2bd5b]" started-at="2024-02-24T13:04:04 IST" name="testMethod5" finished-at="2024-02-24T13:04:04 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doUserReg -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.BasicLogIn@1aafa419]" started-at="2024-02-19T19:40:23 IST" name="closeBrowser" finished-at="2024-02-19T19:40:23 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- testMethod5 -->
+        <test-method signature="testMethod4()[pri:0, instance:parallelTest.TestClass1@48f2bd5b]" started-at="2024-02-24T13:04:04 IST" name="testMethod4" finished-at="2024-02-24T13:04:04 IST" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcases.BasicLogIn@1aafa419]" started-at="2024-02-19T19:40:23 IST" name="launchBrowser" finished-at="2024-02-19T19:40:23 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- testMethod4 -->
+      </class> <!-- parallelTest.TestClass1 -->
+      <class name="parallelTest.TestClass2">
+        <test-method signature="testMethod6()[pri:0, instance:parallelTest.TestClass2@76505305]" started-at="2024-02-24T13:04:04 IST" name="testMethod6" finished-at="2024-02-24T13:04:04 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="doLogIn()[pri:2, instance:testcases.BasicLogIn@1aafa419]" started-at="2024-02-19T19:40:23 IST" name="doLogIn" finished-at="2024-02-19T19:40:23 IST" duration-ms="6" status="PASS">
+        </test-method> <!-- testMethod6 -->
+        <test-method signature="testMethod7()[pri:0, instance:parallelTest.TestClass2@76505305]" started-at="2024-02-24T13:04:04 IST" name="testMethod7" finished-at="2024-02-24T13:04:04 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doLogIn -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.BasicLogIn@1aafa419]" started-at="2024-02-19T19:40:23 IST" name="closeBrowser" finished-at="2024-02-19T19:40:23 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- testMethod7 -->
+        <test-method signature="testMethod8()[pri:0, instance:parallelTest.TestClass2@76505305]" started-at="2024-02-24T13:04:04 IST" name="testMethod8" finished-at="2024-02-24T13:04:04 IST" duration-ms="35" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="closingDBCon()[pri:0, instance:testcases.BasicLogIn@1aafa419]" started-at="2024-02-19T19:40:23 IST" name="closingDBCon" finished-at="2024-02-19T19:40:23 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closingDBCon -->
-      </class> <!-- testcases.BasicLogIn -->
-    </test> <!-- BasicLogIn -->
+        </test-method> <!-- testMethod8 -->
+      </class> <!-- parallelTest.TestClass2 -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
-  <suite started-at="2024-02-19T19:40:23 IST" name="Suite (0)" finished-at="2024-02-19T19:40:24 IST" duration-ms="207">
-    <groups>
-    </groups>
-    <test started-at="2024-02-19T19:40:23 IST" name="Regression CreatingDependies" finished-at="2024-02-19T19:40:24 IST" duration-ms="138">
-      <class name="regressionTest.CreatingDependies">
-        <test-method signature="doUserReg()[pri:1, instance:regressionTest.CreatingDependies@77888435]" started-at="2024-02-19T19:40:23 IST" name="doUserReg" finished-at="2024-02-19T19:40:23 IST" duration-ms="12" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[User not registered]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: User not registered
-at org.testng.Assert.fail(Assert.java:111)
-at regressionTest.CreatingDependies.doUserReg(CreatingDependies.java:11)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1296)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doUserReg -->
-        <test-method signature="thirdTest()[pri:3, instance:regressionTest.CreatingDependies@77888435]" started-at="2024-02-19T19:40:23 IST" name="thirdTest" finished-at="2024-02-19T19:40:23 IST" depends-on-methods="regressionTest.CreatingDependies.doUserReg" duration-ms="8" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- thirdTest -->
-        <test-method signature="fourTest()[pri:4, instance:regressionTest.CreatingDependies@77888435]" started-at="2024-02-19T19:40:23 IST" name="fourTest" finished-at="2024-02-19T19:40:24 IST" duration-ms="44" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fourTest -->
-        <test-method signature="doLogIn()[pri:2, instance:regressionTest.CreatingDependies@77888435]" started-at="2024-02-19T19:40:24 IST" name="doLogIn" finished-at="2024-02-19T19:40:24 IST" depends-on-methods="regressionTest.CreatingDependies.fourTest, regressionTest.CreatingDependies.doUserReg" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method regressionTest.CreatingDependies.doLogIn() on instance regressionTest.CreatingDependies@77888435 depends on not successfully finished methods 
-[regressionTest.CreatingDependies.fourTest() on instance regressionTest.CreatingDependies@77888435
-regressionTest.CreatingDependies.doUserReg() on instance regressionTest.CreatingDependies@77888435]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method regressionTest.CreatingDependies.doLogIn() on instance regressionTest.CreatingDependies@77888435 depends on not successfully finished methods 
-[regressionTest.CreatingDependies.fourTest() on instance regressionTest.CreatingDependies@77888435
-regressionTest.CreatingDependies.doUserReg() on instance regressionTest.CreatingDependies@77888435]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1296)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doLogIn -->
-      </class> <!-- regressionTest.CreatingDependies -->
-    </test> <!-- Regression CreatingDependies -->
-    <test started-at="2024-02-19T19:40:24 IST" name="Regression BasicLogIn" finished-at="2024-02-19T19:40:24 IST" duration-ms="30">
-      <class name="regressionTest.BasicLogIn">
-        <test-method is-config="true" signature="creatingDBCon()[pri:0, instance:regressionTest.BasicLogIn@34123d65]" started-at="2024-02-19T19:40:24 IST" name="creatingDBCon" finished-at="2024-02-19T19:40:24 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- creatingDBCon -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:regressionTest.BasicLogIn@34123d65]" started-at="2024-02-19T19:40:24 IST" name="launchBrowser" finished-at="2024-02-19T19:40:24 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="doUserReg()[pri:1, instance:regressionTest.BasicLogIn@34123d65]" started-at="2024-02-19T19:40:24 IST" name="doUserReg" finished-at="2024-02-19T19:40:24 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doUserReg -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:regressionTest.BasicLogIn@34123d65]" started-at="2024-02-19T19:40:24 IST" name="closeBrowser" finished-at="2024-02-19T19:40:24 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:regressionTest.BasicLogIn@34123d65]" started-at="2024-02-19T19:40:24 IST" name="launchBrowser" finished-at="2024-02-19T19:40:24 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="doLogIn()[pri:2, instance:regressionTest.BasicLogIn@34123d65]" started-at="2024-02-19T19:40:24 IST" name="doLogIn" finished-at="2024-02-19T19:40:24 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doLogIn -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:regressionTest.BasicLogIn@34123d65]" started-at="2024-02-19T19:40:24 IST" name="closeBrowser" finished-at="2024-02-19T19:40:24 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="closingDBCon()[pri:0, instance:regressionTest.BasicLogIn@34123d65]" started-at="2024-02-19T19:40:24 IST" name="closingDBCon" finished-at="2024-02-19T19:40:24 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closingDBCon -->
-      </class> <!-- regressionTest.BasicLogIn -->
-    </test> <!-- Regression BasicLogIn -->
-  </suite> <!-- Suite (0) -->
-  <suite started-at="2024-02-19T19:40:24 IST" name=" Master Suite" finished-at="2024-02-19T19:40:24 IST" duration-ms="0">
-    <groups>
-    </groups>
-  </suite> <!--  Master Suite -->
 </testng-results>
