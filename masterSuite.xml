@@ -4,6 +4,9 @@
 	<suite-files>
 		<suite-file path="./testng.xml"></suite-file>
 		<suite-file path="./regression.xml"></suite-file>
+		<suite-file path="./parameterization.xml"></suite-file>
+		<suite-file path="./parallel.xml"></suite-file>
+		
 		
 	</suite-files>
 

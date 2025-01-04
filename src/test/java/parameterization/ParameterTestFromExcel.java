@@ -20,8 +20,7 @@ public class ParameterTestFromExcel {
 		//convert raw data(fis) into excel workbook format
 		XSSFWorkbook workbook=new XSSFWorkbook(fis);
 		//add sheet
-		XSSFSheet sheet=workbook.getSheet("Sheet1");
-		
+		XSSFSheet sheet=workbook.getSheet("Sheet1");	
 		//to get row(total numbers of row includes heading)
 		//System.out.println (sheet.getPhysicalNumberOfRows());
 		// no. of row excluding heading

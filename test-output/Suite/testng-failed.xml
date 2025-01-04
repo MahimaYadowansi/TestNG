@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="customListerners.Listerners"/>
-    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-  </listeners>
-  <test thread-count="5" name=" TestFailure(failed)">
+  <test thread-count="5" parallel="methods" name="Test(failed)">
     <classes>
-      <class name="testcases.TestFailure">
+      <class name="parameterization.BasicTest">
         <methods>
-          <include name="doLogIn"/>
+          <include name="TestLogin" invocation-numbers="0 1 2 3 4 5 6 7 8 9 10 11"/>
         </methods>
-      </class> <!-- testcases.TestFailure -->
-    </classes>
-  </test> <!--  TestFailure(failed) -->
-  <test thread-count="5" name="CreatingDependies(failed)">
-    <classes>
-      <class name="testcases.CreatingDependies">
+      </class> <!-- parameterization.BasicTest -->
+      <class name="parameterization.LoginRegressionTest">
         <methods>
-          <include name="doLogIn"/>
-          <include name="doUserReg"/>
-          <include name="fourTest"/>
+          <include name="teardown"/>
+          <include name="testLogin" invocation-numbers="0 1 2 3 4 5 6 7 8 9 10 11"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- testcases.CreatingDependies -->
+      </class> <!-- parameterization.LoginRegressionTest -->
+      <class name="parameterization.ParameterizationLogin">
+        <methods>
+          <include name="TestLogin"/>
+        </methods>
+      </class> <!-- parameterization.ParameterizationLogin -->
     </classes>
-  </test> <!-- CreatingDependies(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
