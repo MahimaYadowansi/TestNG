@@ -1,0 +1,4 @@
+To run LoginRegressionTest:
+Step 1: Add utility ExcelReader.java
+Step 2: Add utility TestDataProvider.java
+Step 3: Create LoginRegressionTest and run it.

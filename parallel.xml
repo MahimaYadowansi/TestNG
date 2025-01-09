@@ -7,5 +7,15 @@
       <class name="parallelTest.TestClass2"/>
       <class name="parallelTest.TestClass3"/>
     </classes>
+    
   </test> <!-- Test -->
+  <test name="Firefox Test">
+ <parameter name="browser" value="firefox"></parameter>
+ <classes><class name="parallelTest.TestBrowser"></class></classes>
+    </test>
+    
+    <test name="Chrome Test">
+ <parameter name="browser" value="chrome"></parameter>
+ <classes><class name="parallelTest.TestBrowser"></class></classes>
+    </test>
 </suite> <!-- Suite -->
